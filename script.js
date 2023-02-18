@@ -1,34 +1,35 @@
-/////// дз 6
 
-let userDate = prompt('year of birth')
-let userCity = prompt('Which city')
-let kindeOfSport = prompt('Which sport')
+let userDate = prompt('year of birth');
+let userCity = prompt('Which city');
+let kindeOfSport = prompt('Which sport');
 
-if (userDate !== null){
-    alert(`your age is ${2023 - userDate}`)
+let userAge = 'your age'
+let userCityInfo = 'your city';
+let userSport ='kind of sport'
+
+if (userDate === null) {
+    alert(`you dont like to inform us about ${userAge} ,${userCityInfo},${userSport}`);
+
+
+}else {
+    userAge = `your age is ${2023 - userDate}`
     if (userCity === 'Kiev'){
-        alert('capital of Ukraine');
+        userCityInfo='your city is a capital of Ukraine';
     }else if (userCity ==='London'){
-        alert('capital of UK');
+        userCityInfo ='your city is a capital of UK';
     }else if (userCity ==='Washington'){
-        alert('capital of USA');
+        userCityInfo ='capital of USA';
     }else {
-        alert(`your city is ${userCity}`)
+        userCityInfo = `your city is ${userCity}`
     }
-    if (kindeOfSport === 'box'){
-        alert('do you want t be like a M.Ali?')
-    }else if(kindeOfSport === 'football'){
-            alert('do you want to be like a L.Messi ?')
-    }else if(kindeOfSport === 'basketball'){
-        alert('do you want to be like a M.Jordan ?')
+    if (kindeOfSport === 'Box' || 'box'){
+        userSport ='do you want t be like a M.Ali?'
+    }else if(kindeOfSport === 'Football' || 'football'){
+        userSport='do you want to be like a L.Messi ?'
+    }else if(kindeOfSport  === 'Basketball' || 'basketball'){
+        userSport='do you want to be like a M.Jordan ?'
     }else {
-        alert('also good!')
+        userSport = 'also good!'
     }
-}else{
-    alert(`so sorry that you do not like 
-    to inform us about your date of birth, where do you live
-    ,and kinde of sport that do you like .... `)
+    alert(`${userAge},${userCityInfo},${userSport}`)
 }
-
-
-
