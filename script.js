@@ -1,34 +1,64 @@
-let userDate = prompt('year of birth')
-let userCity = prompt('Which city')
-let kindeOfSport = prompt('Which sport');
+const userDate = prompt('your date of birth?')
 
-let userAge = 'your age'
-let userCityInfo = 'your city';
-let userSport ='kind of sport'
+const userCity = prompt('your city?')
 
-if (userDate === null) {
-    alert(`you dont like to inform us about ${userAge} ,${userCityInfo},${userSport}`);
+const userSport = prompt('favorite kind of sport?')
 
+let age = '';
 
-}else {
-    userAge = `your age is ${2023 - userDate}`
-    if (userCity === 'Kiev'){
-        userCityInfo='your city is a capital of Ukraine';
-    }else if (userCity ==='London'){
-        userCityInfo ='your city is a capital of UK';
-    }else if (userCity ==='Washington'){
-        userCityInfo ='capital of USA';
-    }else {
-        userCityInfo = `your city is ${userCity}`
-    }
-    if (kindeOfSport === 'Box' || 'box'){
-        userSport ='do you want t be like a M.Ali?'
-    }else if(kindeOfSport === 'Football' || 'football'){
-        userSport='do you want to be like a L.Messi ?'
-    }else if(kindeOfSport  === 'Basketball' || 'basketball'){
-        userSport='do you want to be like a M.Jordan ?'
-    }else {
-        userSport = 'also good!'
-    }
-    alert(`${userAge},${userCityInfo},${userSport}`)
+let city = '';
+
+let sport = '';
+
+switch (null){
+    case userDate:
+    case userCity:
+    case userSport:
+        alert('so bad that we dont know your age and city and kind of sport')
+        break
+    default:
+        switch ( typeof userDate){
+            case 'string':
+                age =`${2023 - userDate}`
+                break
+        }
+        switch (userDate){
+            case '':
+                age = 'unknown'
+                break
+        }
+        switch (userCity){
+            case "Kiev":
+                city = 'capital of ukraine'
+                break
+            case "London":
+                city = 'capital of UK'
+                break
+            case "Washington":
+                city = 'capital of USA'
+                break
+            case "":
+                city = 'unknown'
+                break
+            default:
+                city =`${userCity}`
+        }
+        switch (userSport){
+            case "Box":
+                sport = 'do you want to be like a M.ALI'
+                break
+            case "Football":
+                sport = 'do you want to be like a Messi'
+                break
+            case "Basketball":
+                sport = 'do you want to be like a Jordan'
+                break
+            case "":
+                sport = 'unknown'
+                break
+            default:
+            sport = 'also good kind of sport'
+        }
+        alert(`your age is ${age} ,your city is ${city}, ${sport}`)
+        break
 }

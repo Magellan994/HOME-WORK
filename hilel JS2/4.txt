@@ -1,0 +1,236 @@
+alet 
+const блочна€ область видимости 
+
+var функциональна€ 
+
+for let(var i = 0; i < 3; i++){
+
+}
+
+console.log(i)
+
+for let(let i = 0; i < 3; i++){
+
+}
+
+console.log(i) ERROR
+
+
+методы с рабрирй с числами 
+
+const num = 1.123456789
+
+num.toFixed(2) = 1.23
+num.toString (); || ${}
+////
+Math.tunc(num) 1
+Math.floor(num) 1 
+///
+Math.min(2,,4,5,2,-3)-
+Math.max(22,3,4,5,6) +
+Math.pow(2,4) 16* умножает 
+Math.random(()*100)разные числа рандомные + умножает на 100
+Math.round ( Math.random(()*100)) 100
+
+ 
+
+методы с р€дами 
+
+const str = i am string 
+
+str[2] a
+
+str.charAt(3): m
+
+str.length 11
+
+str[str.length -1]; g 
+////// 
+ћ≈тоды 
+
+to lLowerCase() to UperCase 
+
+const str = hello world 
+
+str.toLowerCase()
+str.toUperCase()
+
+str.insexOf(world) 6
+str.insexOf(l,3) от третего значение l
+
+str.includes (ll)true 
+/////
+
+str.substring( 0, 3 )hel 
+
+str.substring( 3 )ello world 
+str.substring + toUpperCase( 3 )Ello world 
+
+
+str.slice 
+
+str = stringify
+
+str.slice(-4,-1)gif\
+str.slice(-4,-1)
+str.slice(-4,-1)
+str.split('L') делает из строки массив / убирет L
+str.split().reverse переворачивает  ().join('')склеевыает в строку 
+
+
+str =1222423545654656
+str.length 
+'*".repeat(12) + str.slice (-4) 4656
+
+str.lsice(-4).padStart(str.lenght,'*'));  ************4656
+
+циклы 
+
+
+let n = 0
+
+n+=1;
+n+=2;
+n+=3;
+n+=4;
+n+=5;
+
+
+
+for(let i = 0; i <= 5 ; i++){
+m+=i;
+}
+
+while (умова){
+
+код тело цила 
+
+let i = 0;
+while (i < 3) {
+alert(i);
+i++;
+}
+
+do{
+while}
+
+let i = 0;
+
+do{
+alert (i);
+i++
+} while (i < 3);
+
+let res = null
+do {
+res = prompt()}
+while(!res)
+
+
+for (let = 0; i < 10; i++ ){
+if (i === 3) {break;}
+console.log(i)}
+
+
+for (let = 0; i < 10; i++ ){
+if (i !== 3) {continue;}
+console.log(i)}
+
+let res = null;
+
+while(true){
+res =prompt();
+if(res) break}
+
+цикл в цикле 
+
+for {let i = 0; i < 10; i++) {
+for(let j = 0; j < 20: j++){
+console.log i,j);
+}
+}
+
+
+for {let i = 0; i < 3; i++) {
+for(let j = 0; j < 5: j++){
+console.log i,j);
+}
+}
+
+for (let i = 10; i <= 20; i+= 2){
+console.log(i) 10,12,14,16,18,20;
+}
+
+
+for (let i = 100; i <= 200; i+= 10){
+console.log(i) 100,110,120,130,140,150,160,170,180,190,120
+}
+
+let r = 0
+for (let i = 1; i <= 15; i++){
+r += i; 
+}
+
+console.log(r); 120
+
+
+let r = 500
+const d = 3
+for (let i = 1; i <= d; i++){
+r += i; 
+}
+
+console.log(r/d); 120
+
+let min = 100;
+let max = 200;
+for (let i = min; i <= max; i++){
+if (i % 3) continue ;
+comsole.log
+}
+
+console.log(r); 102 105 108 111 114 117 120 
+
+
+let num = 200
+for (let i = 1; i <= num; i++){
+if(num % i === 0)console.log(i)1
+}
+
+console.log(r); `1 2 4 5 8 10 
+
+
+let num = 200
+let res = ' ';
+for (let i = 1; i <= num; i++){
+for (let j = 1; j <= num; j++){
+res += `${i} * ${j} = ${i * j} /n`          в р€д 
+}
+}
+
+console.log(res)
+
+
+let num = 200
+let res = ' ';
+for (let i = 1; i <= num; i++){
+for (let j = 1; j <= num; j++){
+res += `${i} * ${j} = ${i * j} 
+
+таблица умнажени€
+
+let num = 200
+let res = ' ';
+for (let i = 1; i <= num; i++){
+for (let j = 1; j <= num; j++){
+res += `${j} * ${i} = ${i * j} /n`          в р€д 
+}
+res += `\n`;
+}
+
+console.log(res)         в р€д 
+}
+
+}
+
+console.log(res)
