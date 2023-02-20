@@ -1,35 +1,68 @@
+////////*ДЗ 6*///////////
 
-let userDate = prompt('year of birth');
-let userCity = prompt('Which city');
-let kindeOfSport = prompt('Which sport');
+const userDate = prompt('your date of birth?')
 
-let userAge = 'your age'
-let userCityInfo = 'your city';
-let userSport ='kind of sport'
+const userCity = prompt('your city?')
 
-if (userDate === null) {
-    alert(`you dont like to inform us about ${userAge} ,${userCityInfo},${userSport}`);
+const userSport = prompt('favorite kind of sport?')
 
+let age ;
 
+let city ;
+
+let sport ;
+
+switch (userDate){
+    case null:
+    case '':
+        age =''
+        break
+    default:
+        age = `your age is ${2023 - userDate},`
+        break
+}
+
+switch (userCity){
+    case null:
+    case '':
+        city = ''
+        break
+    case 'London':
+        city = ` ${userCity} the capital of UK,`
+        break
+    case 'Kiev':
+        city = `${userCity} the capital of Ukraine,`
+        break
+    case 'Washington':
+        city = `${userCity} the capital of Usa,`
+        break
+    default:
+        city = `your city is ${userCity}`
+}
+
+switch (userSport){
+    case null:
+    case '':
+        sport = ''
+        break
+    case 'Box':
+    case 'box':
+        sport = 'cool,do you want  to be like a M.Ali?'
+        break
+    case 'Football':
+    case 'football':
+        sport = 'cool,do you want  to be like a Messi?'
+        break
+    case 'Basketball':
+    case 'basketball':
+        sport = 'cool,do you want  to be like a Jordan?'
+        break
+    default:
+        sport = `${userSport} also cool.`
+        break
+}
+if (userDate === null  && userCity === null && userSport === null) {
+    alert(`sorry but no information about your ${age},${city},${sport} `);
 }else {
-    userAge = `your age is ${2023 - userDate}`
-    if (userCity === 'Kiev'){
-        userCityInfo='your city is a capital of Ukraine';
-    }else if (userCity ==='London'){
-        userCityInfo ='your city is a capital of UK';
-    }else if (userCity ==='Washington'){
-        userCityInfo ='capital of USA';
-    }else {
-        userCityInfo = `your city is ${userCity}`
-    }
-    if (kindeOfSport === 'Box' || 'box'){
-        userSport ='do you want t be like a M.Ali?'
-    }else if(kindeOfSport === 'Football' || 'football'){
-        userSport='do you want to be like a L.Messi ?'
-    }else if(kindeOfSport  === 'Basketball' || 'basketball'){
-        userSport='do you want to be like a M.Jordan ?'
-    }else {
-        userSport = 'also good!'
-    }
-    alert(`${userAge},${userCityInfo},${userSport}`)
+    alert(` ${age} ${city} ${sport}`)
 }
