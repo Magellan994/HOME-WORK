@@ -1,3 +1,5 @@
+////////*ДЗ 6*///////////
+
 const userDate = prompt('your date of birth?')
 
 const userCity = prompt('your city?')
