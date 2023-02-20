@@ -1,64 +1,38 @@
-const userDate = prompt('your date of birth?')
+/////// дз 7
 
-const userCity = prompt('your city?')
-
-const userSport = prompt('favorite kind of sport?')
-
-let age = '';
-
-let city = '';
-
-let sport = '';
-
-switch (null){
-    case userDate:
-    case userCity:
-    case userSport:
-        alert('so bad that we dont know your age and city and kind of sport')
-        break
-    default:
-        switch ( typeof userDate){
-            case 'string':
-                age =`${2023 - userDate}`
-                break
-        }
-        switch (userDate){
-            case '':
-                age = 'unknown'
-                break
-        }
-        switch (userCity){
-            case "Kiev":
-                city = 'capital of ukraine'
-                break
-            case "London":
-                city = 'capital of UK'
-                break
-            case "Washington":
-                city = 'capital of USA'
-                break
-            case "":
-                city = 'unknown'
-                break
-            default:
-                city =`${userCity}`
-        }
-        switch (userSport){
-            case "Box":
-                sport = 'do you want to be like a M.ALI'
-                break
-            case "Football":
-                sport = 'do you want to be like a Messi'
-                break
-            case "Basketball":
-                sport = 'do you want to be like a Jordan'
-                break
-            case "":
-                sport = 'unknown'
-                break
-            default:
-            sport = 'also good kind of sport'
-        }
-        alert(`your age is ${age} ,your city is ${city}, ${sport}`)
-        break
+for (let i = 20; i <= 30; i+= 0.5 ){
+    console.log(i);
 }
+
+/////*               */////
+
+let dollar = 27;
+let convert = '';
+
+for (let i = 10; i <=100; i+= 10){
+    convert = i * dollar
+    console.log(convert)
+}
+
+/////*       */////
+
+
+for ( let i = 1; i <= 100; i++){
+    console.log(Math.sqrt(i))
+}
+
+///// *     * /////
+let n = 20;
+
+for (let i = 2; i <= n; i++){
+    if ( n % i === 0)console.log(i)
+}
+/////*       */////
+
+const a = 50;
+
+for (let i = 1; i <= a; i++ ){
+    if (i % 3 === 0)console.log(i)
+}
+
+
