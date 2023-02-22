@@ -1,5 +1,9 @@
-/////// дз 7.1
+/////// дз 7.2
 
-for (let i = 20; i <= 30; i+= 0.5 ){
-    console.log(i);
+let dollar = 27;
+let convert = '';
+
+for (let i = 10; i <=100; i+= 10){
+    convert = i * dollar
+    console.log(convert)
 }
