@@ -1,10 +1,12 @@
-/////// дз 7.3
+/////// дз 7.4
 
 
-let n = Math.sqrt(50);
+let x = 20;
 
-for (let i = 1; i < 100; i++){
-    if (i < n){
-        console.log(Math.pow(i,2))
+d:
+    for (let  i = 2; i <= x; i++){
+        for (let j = 2; j < i; j++){
+            if (i % j === 0) continue d
+        }
+        console.log(i)
     }
-}
