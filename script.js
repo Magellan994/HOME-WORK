@@ -1,7 +1,11 @@
 /////// дз 7.4
 
-let n = 30;
+let x = 20;
 
-for (let i = 1; i <= n; i++){
-    if ( n % i === 0)console.log(i)
-}
+d:
+    for (let  i = 2; i <= x; i++){
+        for (let j = 2; j < i; j++){
+            if (i % j === 0) continue d
+        }
+        console.log(i)
+    }
