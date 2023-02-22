@@ -1,9 +1,7 @@
-/////// дз 7.2
+/////// дз 7.4
 
-let dollar = 27;
-let convert = '';
+let n = 30;
 
-for (let i = 10; i <=100; i+= 10){
-    convert = i * dollar
-    console.log(convert)
+for (let i = 1; i <= n; i++){
+    if ( n % i === 0)console.log(i)
 }
