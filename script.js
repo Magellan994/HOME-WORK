@@ -1,12 +1,11 @@
-/////// дз 7.4
+
+//////////////////*7.3*/////
 
 
-let x = 20;
+let n = 9;
 
-d:
-    for (let  i = 2; i <= x; i++){
-        for (let j = 2; j < i; j++){
-            if (i % j === 0) continue d
-        }
-        console.log(i)
+for (let i = 1; i <= 100; i++){
+    if (i < n){
+        console.log(Math.sqrt(i))
     }
+}
