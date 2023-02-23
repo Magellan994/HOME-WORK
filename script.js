@@ -1,35 +1,24 @@
+/////// дз 7.4
+/////// дз 8
 
-let userDate = prompt('year of birth');
-let userCity = prompt('Which city');
-let kindeOfSport = prompt('Which sport');
-
-let userAge = 'your age'
-let userCityInfo = 'your city';
-let userSport ='kind of sport'
-
-if (userDate === null) {
-    alert(`you dont like to inform us about ${userAge} ,${userCityInfo},${userSport}`);
+let x = 13;
+let a = true;
 
 
+if (x === 1){
+    console.log('1 is neither prime')
+}else if (x > 1) {
+    for (let i = 2; i < x; i++) {
+        if (x % i === 0) {
+            a = false;
+        }
+    }
+
+    if (a) {
+        console.log(`${x} is prime`)
+    } else {
+        console.log(`${x} is not prime`)
+    }
 }else {
-    userAge = `your age is ${2023 - userDate}`
-    if (userCity === 'Kiev'){
-        userCityInfo='your city is a capital of Ukraine';
-    }else if (userCity ==='London'){
-        userCityInfo ='your city is a capital of UK';
-    }else if (userCity ==='Washington'){
-        userCityInfo ='capital of USA';
-    }else {
-        userCityInfo = `your city is ${userCity}`
-    }
-    if (kindeOfSport === 'Box' || 'box'){
-        userSport ='do you want t be like a M.Ali?'
-    }else if(kindeOfSport === 'Football' || 'football'){
-        userSport='do you want to be like a L.Messi ?'
-    }else if(kindeOfSport  === 'Basketball' || 'basketball'){
-        userSport='do you want to be like a M.Jordan ?'
-    }else {
-        userSport = 'also good!'
-    }
-    alert(`${userAge},${userCityInfo},${userSport}`)
+    console.log('this number is not a prime number')
 }
