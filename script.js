@@ -1,35 +1,92 @@
-
-let userDate = prompt('year of birth');
-let userCity = prompt('Which city');
-let kindeOfSport = prompt('Which sport');
-
-let userAge = 'your age'
-let userCityInfo = 'your city';
-let userSport ='kind of sport'
-
-if (userDate === null) {
-    alert(`you dont like to inform us about ${userAge} ,${userCityInfo},${userSport}`);
+let arr =[];
+let arr2 =[]
+let arr3 =[]
 
 
-}else {
-    userAge = `your age is ${2023 - userDate}`
-    if (userCity === 'Kiev'){
-        userCityInfo='your city is a capital of Ukraine';
-    }else if (userCity ==='London'){
-        userCityInfo ='your city is a capital of UK';
-    }else if (userCity ==='Washington'){
-        userCityInfo ='capital of USA';
-    }else {
-        userCityInfo = `your city is ${userCity}`
+
+let users = [
+    {
+        "index": 0,
+        "isActive": true,
+        "balance": "$2,226.60",
+        "name": "Eugenia Sawyer",
+        "gender": "female",
+        "phone": "+1 (840) 583-3207",
+        "address": "949 John Street, Rose, Puerto Rico, 1857"
+    },
+    {
+        "index": 1,
+        "isActive": true,
+        "balance": "$2,613.77",
+        "name": "Pauline Gallegos",
+        "gender": "female",
+        "phone": "+1 (985) 593-3328",
+        "address": "328 Greenpoint Avenue, Torboy, North Dakota, 6857"
+    },
+    {
+        "index": 2,
+        "isActive": false,
+        "balance": "$3,976.41",
+        "name": "Middleton Chaney",
+        "gender": "male",
+        "phone": "+1 (995) 591-2478",
+        "address": "807 Fleet Walk, Brutus, Arkansas, 9783"
+    },
+    {
+        "index": 3,
+        "isActive": true,
+        "balance": "$1,934.58",
+        "name": "Burns Poole",
+        "gender": "male",
+        "phone": "+1 (885) 559-3422",
+        "address": "730 Seba Avenue, Osage, Alabama, 6290"
+    },
+    {
+        "index": 4,
+        "isActive": true,
+        "balance": "$3,261.65",
+        "name": "Mcfadden Horne",
+        "gender": "male",
+        "phone": "+1 (942) 565-3988",
+        "address": "120 Scholes Street, Kirk, Michigan, 1018"
+    },
+    {
+        "index": 5,
+        "isActive": false,
+        "balance": "$1,790.56",
+        "name": "Suzette Lewis",
+        "gender": "female",
+        "phone": "+1 (837) 586-3283",
+        "address": "314 Dunne Place, Bawcomville, Guam, 9053"
     }
-    if (kindeOfSport === 'Box' || 'box'){
-        userSport ='do you want t be like a M.Ali?'
-    }else if(kindeOfSport === 'Football' || 'football'){
-        userSport='do you want to be like a L.Messi ?'
-    }else if(kindeOfSport  === 'Basketball' || 'basketball'){
-        userSport='do you want to be like a M.Jordan ?'
-    }else {
-        userSport = 'also good!'
+]
+
+
+
+const filtredArray = users.filter((item) => {
+    if ( item.balance >'$2,000') {
+        return arr.push(item.phone);
     }
-    alert(`${userAge},${userCityInfo},${userSport}`)
-}
+});
+
+
+const filtredArray2 = users.filter((item) => {
+    if ( item.balance > '$2,000') {
+        return arr2.push (item.balance.slice(1,6).split(/,\s*/).join(''))
+
+    }
+});
+
+
+arr2.map(arr4 => {
+    arr3.push(parseInt(arr4))
+
+})
+
+const sum  = arr3.reduce((a,b) => a + b )
+
+
+console.log(filtredArray)
+console.log(arr)
+console.log(filtredArray2)
+console.log( sum)
